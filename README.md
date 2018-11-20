@@ -2,13 +2,13 @@
 ## Description
 Pixelwise classification for damaged areas in high resolution areal imagery of forests.
 The input is a 4 bands orthophoto (RGB + NIR) of size 256x256 (can also be bigger and then divided into tiles of 256x256).
-![Input Output Example](https://github.com/0xzayd/blob/master/img/inp_outp.png)<br>
+![Input Output Example](https://github.com/0xzayd/CNN_forest/blob/master/img/input_output.png)<br>
 ## U-Net Model
 The segmentation model is based on the [U-Net](https://arxiv.org/pdf/1505.04597.pdf) architecture.<br>
 The implemented model is divided into two parts: Encoding path and the Decoding path. <br>
 The Encoding path decreases the dimensionality of the input image and learns to keep only the useful features<br>
 The Decoding path increases the dimensionality of the activation maps from the encoding path and learns to recover the full spatial information regarding the label<br>.
-![U-Net Architecture](https://github.com/0xzayd/blob/master/img/inp_outp.png)<br>
+![U-Net Architecture](https://github.com/0xzayd/CNN_forest/blob/master/img/model.png)<br>
 <br>
 Each Encoding block has the following layers:<br>
 * Convolutional Layer + SeLU Activation
