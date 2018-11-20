@@ -16,13 +16,14 @@ Each Encoding block has the following layers:<br>
 * Convolutional Layer + SeLU Activation
 * Maxpooling Layer (2,2)
 <br>
+
 Each Decoding block has the following layers:<br>
 * Concatenation with the high level feature maps with the decoding block's input 
 * Convolutional Layer + ReLU Activation
 * Alpha Dropout to prevent Overfitting
 * Convolutional Layer + SeLU Activation
 * Transpose convolutional Layer to increase the dimensionality
-
+<br>
 ## Data Preprocessing
 10000x10000 pixels is divided into tiles of size 256x256<br>
 Remote sensing data (from each band) is stored and stacked into an array of shape (256,256,4)<br>
