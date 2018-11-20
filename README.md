@@ -15,7 +15,7 @@ Each Encoding block has the following layers:<br>
 * Alpha Dropout to prevent Overfitting
 * Convolutional Layer + SeLU Activation
 * Maxpooling Layer (2,2)
-br>
+<br>
 Each Decoding block has the following layers:<br>
 * Concatenation with the high level feature maps with the decoding block's input 
 * Convolutional Layer + ReLU Activation
