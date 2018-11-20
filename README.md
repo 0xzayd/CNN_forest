@@ -24,7 +24,9 @@ Each Decoding block has the following layers:<br>
 * Convolutional Layer + SeLU Activation
 * Transpose convolutional Layer to increase the dimensionality
 <br>
+
 ## Data Preprocessing
+
 10000x10000 pixels is divided into tiles of size 256x256<br>
 Remote sensing data (from each band) is stored and stacked into an array of shape (256,256,4)<br>
 Label data is converted to binary values (0 or 1) and stored in an array of shape (256,256,1)<br>
